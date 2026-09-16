@@ -1,4 +1,4 @@
-# Домашнее задание к занятию 15 «Система сбора логов Elastic Stack» - kadancev Vladimir
+# Домашнее задание к занятию 15 «Система сбора логов Elastic Stack» - Kadancev Vladimir
 
 ## Дополнительные ссылки
 
