@@ -29,7 +29,12 @@
 - logstash;
 - kibana;
 - filebeat.
+---
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/01.png)
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/02.png)
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/03.png)
 
+---
 Logstash следует сконфигурировать для приёма по tcp json-сообщений.
 
 Filebeat следует сконфигурировать для отправки логов docker вашей системы в logstash.
@@ -40,15 +45,36 @@ Filebeat следует сконфигурировать для отправки
 Результатом выполнения задания должны быть:
 
 - скриншот `docker ps` через 5 минут после старта всех контейнеров (их должно быть 5);
-- скриншот интерфейса kibana;
-- docker-compose манифест (если вы не использовали директорию help);
-- ваши yml-конфигурации для стека (если вы не использовали директорию help).
+---
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/06.png)
 
+---
+- скриншот интерфейса kibana;
+---
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/05.png)
+
+---
+- docker-compose манифест (если вы не использовали директорию help);
+---
+[docker-compose.yml](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/docker-compose.yml)
+
+---
+- ваши yml-конфигурации для стека (если вы не использовали директорию help).
+---
+[filebeat.yml](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/filebeat/filebeat.yml)
+
+---
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create) и создайте несколько index-patterns из имеющихся.
 
 Перейдите в меню просмотра логов в kibana (Discover) и самостоятельно изучите, как отображаются логи и как производить поиск по логам.
+
+---
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/04.png)
+![monitoring](https://github.com/valdemar-2502/Elastic-Stack-log-collection-system---Homework/blob/main/screenshots/07.png)
+
+---
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
